@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 const connnectMongoDb=()=>{
-    mongoose.connect(process.env.MONDO_URL,{
+    mongoose.connect(process.env.MONGO_DB_URL,{
         dbName:'PROTOFOLIO'
     }).then(()=>{
         console.log("connected")
